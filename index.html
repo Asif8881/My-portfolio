@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio Website </title>
     <link rel="stylesheet" href="style.css">
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"
+        integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 
 <body>
@@ -20,13 +22,16 @@
                             <span class="name-c">Asif.</span>
                         </h1>
                     </div>
-                    <ul>
+                    <ul id="sideMenue">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Services</a></li>
                         <li><a href="#">Portfolio</a></li>
                         <li><a href="#">Contact</a></li>
+                        <i class="fa-solid fa-xmark fastss" onclick="closemenu()"></i>
+                        
                     </ul>
+                    <i class="fa-solid fa-bars fastss" onclick="openmenue()"></i>
                 </nav>
                 <div class="header-text">
                     <p>Junior Web Devloper</p>
@@ -35,7 +40,7 @@
             </div>
         </div>
     </header>
-    <hr>
+
     <main>
         <div id="about">
             <div class="container">
@@ -49,17 +54,127 @@
                             quisquam rem nam reiciendis perferendis, voluptatum, aliquam commodi eveniet non laborum
                             praesentium architecto qui provident voluptatem facilis! Dolores, aperiam.</p>
 
-                            <div class="tab-titles">
-                                <p class="tab-links">Skills</p>
-                                <p class="tab-links">Exprince</p>
-                                <p class="tab-links">Education</p>
-                            </div>
-
+                        <div class="tab-titles">
+                            <p class="tab-links active-link">Skills</p>
+                            <p class="tab-links">Exprince</p>
+                            <p class="tab-links">Education</p>
+                        </div>
+                        <div class="tab-contents">
+                            <!-- <ul>
+                                <li><span>UI/UX</span><br> fontin And Backin Devloper </li>
+                                <li><span>Web Devloper</span><br>Devloper fontin And Backin Devloper </li>
+                                <li><span>App Devloper</span><br>Devloper </li>
+                            </ul> -->
+                        </div>
+                        <div class="tab-contents">
+                            <!-- <ul>
+                                <li><span>UI/UX</span><br> fontin And Backin Devloper </li>
+                                <li><span>Web Devloper</span><br>Devloper fontin And Backin Devloper </li>
+                                <li><span>App Devloper</span><br>Devloper </li>
+                            </ul> -->
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- services -->
+        <div id="services">
+            <div class="container">
+                <h1 class="Sub-tital">My Services</h1>
+                <div class="servicese-list">
+                    <div class="s-l-i">
+                        <i class="fa-solid fa-code size"></i>
+                        <h2>Web Disign</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ullam modi suscipit
+                            inventore rerum perferendis!
+                        </p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div class="s-l-i">
+                        <i class="fa-solid fa-crop size"></i>
+                        <h2>UI/UX Disign</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ullam modi suscipit
+                            inventore rerum perferendis!
+                        </p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div class="s-l-i">
+                        <i class="fa-brands fa-app-store size"></i>
+                        <h2>App Disign</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ullam modi suscipit
+                            inventore rerum perferendis!
+                        </p>
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- portfulio -->
+        <div id="portfulio">
+            <div class="container">
+                <h1 class="Sub-tital">My picture</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="img/WhatsApp Image 2025-02-21 at 09.56.04_39418611.jpg" class="img1">
+                    </div>
+                    <div class="work">
+                        <img src="img/WhatsApp Image 2025-02-21 at 09.56.05_3f7ae22e.jpg" class="img1">
+                    </div>
+                    <div class="work">
+                        <img src="img/IMG_20221223_160930.jpg" class="img1">
+                    </div>
+                </div>
+            </div>
+            <div>
+                <a href="#" class="btn">See More</a>
+            </div>
+        </div>
     </main>
+    <footer>
+        <div id="Contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="Sub-tital">Contact Me</h1>
+                        
+                        <p> <i class="fa-solid fa-envelope size2"></i>  asif@gmail.com</p>
+                        <p> <i class="fa-solid fa-phone size2"></i>  0129299292233</p>
+                        <div class="socail-icon">
+                            <a href="https://www.facebook.com/share/1Xe2Bn49qW/"><i
+                                    class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/f_asif77?igsh=MWhoN3RnazBqeHZyYw=="><i
+                                    class="fa-brands fa-instagram"></i></i></a>
+                            <a href=""><i class="fa-brands fa-twitter"></i></i></a>
+                            <a href="https://www.tiktok.com/@sojiburrahmanasif?is_from_webapp=1&sender_device=pc"><i
+                                    class="fa-brands fa-tiktok"></i></i></a>
+                        </div>
+                        <a href="img/DSC_0006.JPG" download class="btn btn2"> Downlord CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form action="">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        var sideMenue = document.getElementById("sideMenue")
+        function openmenue(){
+            sideMenue.style.right = "0"
+        }
+        function closemenu(){
+            sideMenue.style.right = "-200px"
+        }
+
+    </script>
 </body>
 
 </html>
