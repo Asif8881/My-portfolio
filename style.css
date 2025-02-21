@@ -9,6 +9,10 @@ body {
     background: #080808;
     color: #fff;
 }
+html{
+    scroll-behavior: smooth;
+}
+
 
 #header {
     width: 100%;
@@ -91,7 +95,7 @@ nav ul li a:hover::after {
 
 /* About */
 .img1 {
-    height: 500px;
+    height: auto;
     width: 350px;
     border-radius: 10px;
 }
@@ -353,5 +357,9 @@ nav .fastss{
     }
     .about-col-1, .about-col-2{
         flex-basis: 100%;
+        margin: bottom 30px; ;
     } 
+    .contact-left,.contact-right{
+        flex-basis: 100%;
+    }
 }
